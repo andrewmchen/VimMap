@@ -1,0 +1,16 @@
+        PURPOSE OF TOOL IS TO ALLOW PEOPLE TO VISUALIZE OPEN KEYS
+
+COLORSCHEME:
+    Red for default keymaps that you never use.
+    Orange for default keymaps that you may want to rebind.
+    Green for selfmade.
+    Yellow for pluginmade.
+   
+    
+
+Have box on top of the keyboard showing current keystrokes that are entered in.
+    If press delete, take out everything in keystrokebox and reset.
+    If press leader, animate button press and then take to new keyboard.
+    
+
+Have box under keystroke box to describe what the last keypress did. IE if pressed i would give like some descrip like insert.
