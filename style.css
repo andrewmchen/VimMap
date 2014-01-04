@@ -7,8 +7,16 @@ font: 71%/1.5 Verdana, Sans-Serif;
 background: #eee;  
 }  
 #keystroke {
-    background: #fff;
+    background: #eee;
     width: 600px;
+    margin: auto;
+    text-align: center;
+}
+#inputbox{
+    position: absolute;
+    top: 100px;
+    left: 50px; 
+    width: 100px;
 }
 #container {  
 margin: 100px auto;  
