@@ -3,90 +3,93 @@
 <head>  
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
       
-    <title>Online Keyboard</title>  
+    <title>VIM MAP</title>  
     <link rel="stylesheet" type="text/css" href="style.css" />  
     <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="string.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </head>  
 <body>  
   
 <div id="keystroke">
+    &nbsp
 </div>
 <div id="description">
+    &nbsp
 </div>
-<div id="inputbox">
-    <textarea>
+<div>
+    <textarea id="inputbox">
     </textarea>
 </div>
 <div id="container">  
     <ul id="keyboard">  
-        <li class="function">esc</li>
-        <li class="function">F1</li>
-        <li class="function">F2</li>
-        <li class="function">F3</li>
-        <li class="function">F4</li>
-        <li class="function">F5</li>
-        <li class="function">F6</li>
-        <li class="function">F7</li>
-        <li class="function">F8</li>
-        <li class="function">F9</li>
-        <li class="function">F10</li>
-        <li class="function">F11</li>
-        <li class="function">F12</li>
-        <li class="symbol">`</li>
-        <li class="symbol">!</li>
-        <li class="symbol">@</li>
-        <li class="symbol">#</li>
-        <li class="symbol">$</li>
-        <li class="symbol">%</li>
-        <li class="symbol">^</li>
-        <li class="symbol">&</li>
-        <li class="symbol">*</li>
-        <li class="symbol">(</li>
-        <li class="symbol">)</li>
-        <li class="symbol">-</li>
-        <li class="symbol">=</li>
-        <li class="delete lastitem">delete</li>  
-        <li class="tab">tab</li>  
-        <li class="letter">q</li>  
-        <li class="letter">w</li>  
-        <li class="letter">e</li>  
-        <li class="letter">r</li>  
-        <li class="letter">t</li>  
-        <li class="letter">y</li>  
-        <li class="letter">u</li>  
-        <li class="letter">i</li>  
-        <li class="letter">o</li>  
-        <li class="letter">p</li>  
-        <li class="symbol"><span class="off">[</span><span class="on">{</span></li>  
-        <li class="symbol"><span class="off">]</span><span class="on">}</span></li>  
-        <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>  
-        <li class="capslock">caps lock</li>  
-        <li class="letter">a</li>  
-        <li class="letter">s</li>  
-        <li class="letter">d</li>  
-        <li class="letter">f</li>  
-        <li class="letter">g</li>  
-        <li class="letter">h</li>  
-        <li class="letter">j</li>  
-        <li class="letter">k</li>  
-        <li class="letter">l</li>  
-        <li class="symbol"><span class="off">;</span><span class="on">:</span></li>  
-        <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>  
-        <li class="return lastitem">return</li>  
-        <li class="left-shift">shift</li>  
-        <li class="letter">z</li>  
-        <li class="letter">x</li>  
-        <li class="letter">c</li>  
-        <li class="letter">v</li>  
-        <li class="letter">b</li>  
-        <li class="letter">n</li>  
-        <li class="letter">m</li>  
-        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>  
-        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>  
-        <li class="symbol"><span class="off">/</span><span class="on">?</span></li>  
-        <li class="right-shift lastitem">shift</li>  
-        <li class="space lastitem">&nbsp;</li>  
+        <li id="esc" class="function">esc</li>
+        <li id="F1" class="function">F1</li>
+        <li id="F2" class="function">F2</li>
+        <li id="F3" class="function">F3</li>
+        <li id="F4" class="function">F4</li>
+        <li id="F5" class="function">F5</li>
+        <li id="F6" class="function">F6</li>
+        <li id="F7" class="function">F7</li>
+        <li id="F8" class="function">F8</li>
+        <li id="F9" class="function">F9</li>
+        <li id="F10" class="function">F10</li>
+        <li id="F11" class="function">F11</li>
+        <li id="F12" class="function">F12</li>
+        <li id="`" class="symbol">`</li>
+        <li id="!" class="symbol">!</li>
+        <li id="@" class="symbol">@</li>
+        <li id="#" class="symbol">#</li>
+        <li id="$" class="symbol">$</li>
+        <li id="%" class="symbol">%</li>
+        <li id="^" class="symbol">^</li>
+        <li id="&" class="symbol">&</li>
+        <li id="*" class="symbol">*</li>
+        <li id="(" class="symbol">(</li>
+        <li id=")" class="symbol">)</li>
+        <li id="-" class="symbol">-</li>
+        <li id="=" class="symbol">=</li>
+        <li id="delete" class="delete lastitem">delete</li>  
+        <li id="tab" class="tab">tab</li>  
+        <li id="q" class="letter">q</li>  
+        <li id="w" class="letter">w</li>  
+        <li id="e" class="letter">e</li>  
+        <li id="r" class="letter">r</li>  
+        <li id="t" class="letter">t</li>  
+        <li id="y" class="letter">y</li>  
+        <li id="u" class="letter">u</li>  
+        <li id="i" class="letter">i</li>  
+        <li id="o" class="letter">o</li>  
+        <li id="p" class="letter">p</li>  
+        <li id="{" class="symbol"><span class="off">[</span><span class="on">{</span></li>  
+        <li id="}" class="symbol"><span class="off">]</span><span class="on">}</span></li>  
+        <li id="|" class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>  
+        <li id="caps" class="capslock">caps lock</li>  
+        <li id="a" class="letter">a</li>  
+        <li id="s" class="letter">s</li>  
+        <li id="d" class="letter">d</li>  
+        <li id="f" class="letter">f</li>  
+        <li id="g" class="letter">g</li>  
+        <li id="h" class="letter">h</li>  
+        <li id="j" class="letter">j</li>  
+        <li id="k" class="letter">k</li>  
+        <li id="l" class="letter">l</li>  
+        <li id=";" class="symbol"><span class="off">;</span><span class="on">:</span></li>  
+        <li id="'" class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>  
+        <li id="return" class="return lastitem">return</li>  
+        <li id="shift" class="left-shift">shift</li>  
+        <li id="z" class="letter">z</li>  
+        <li id="x" class="letter">x</li>  
+        <li id="c" class="letter">c</li>  
+        <li id="v" class="letter">v</li>  
+        <li id="b" class="letter">b</li>  
+        <li id="n" class="letter">n</li>  
+        <li id="m" class="letter">m</li>  
+        <li id="," class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>  
+        <li id="." class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>  
+        <li id="/" class="symbol"><span class="off">/</span><span class="on">?</span></li>  
+        <li id="rshift" class="right-shift lastitem">shift</li>  
+        <li id="space" class="space lastitem">&nbsp;</li>  
     </ul>  
 </div>  
 </html>

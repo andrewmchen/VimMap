@@ -14,14 +14,20 @@ background: #eee;
 }
 #inputbox{
     position: absolute;
-    top: 100px;
+    top: 130px;
     left: 50px; 
-    width: 100px;
+    width: 200px;
+    height: 200px;
 }
 #container {  
 margin: 100px auto;  
 width: 688px;  
 }  
+#description{
+    text-align: center;
+    margin: auto;
+
+}
 #write {  
 margin: 0 0 5px;  
 padding: 5px;  
@@ -98,3 +104,6 @@ list-style: none;
         cursor: pointer;  
         }  
 
+.red {
+    background: red;
+}
