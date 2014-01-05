@@ -11,8 +11,10 @@
 </head>  
 <body>  
   
+<div id="title">
+    Worried about having too many vim mappings and overwriting one of them? Here is your solution! A visual map to your vim mappings.
+</div>
 <div id="keystroke">
-    &nbsp
 </div>
 <div id="description">
     &nbsp
@@ -20,6 +22,21 @@
 <div>
     <textarea id="inputbox">
     </textarea>
+</div>
+<div id=help>
+    <p>
+    <span style="font-weight: bold;"> How To Use:</span> <br>
+   Open Vim<br>
+
+    :redir! > vim_maps.txt <br>
+    :map <br>
+    Press Enter Until Finished <br>
+    :map! <br>
+    Press Enter Until Finished <br>
+    :redir END <br>
+    Open vim_maps.txt <br>
+    Paste in mappings to left inputbox <br>
+    </p>
 </div>
 <div id="container">  
     <ul id="keyboard">  
@@ -63,7 +80,7 @@
         <li id="p" class="letter">p</li>  
         <li id="{" class="symbol"><span class="off">[</span><span class="on">{</span></li>  
         <li id="}" class="symbol"><span class="off">]</span><span class="on">}</span></li>  
-        <li id="|" class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>  
+        <li id="leader" class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>  
         <li id="caps" class="capslock">caps lock</li>  
         <li id="a" class="letter">a</li>  
         <li id="s" class="letter">s</li>  
@@ -74,7 +91,7 @@
         <li id="j" class="letter">j</li>  
         <li id="k" class="letter">k</li>  
         <li id="l" class="letter">l</li>  
-        <li id=";" class="symbol"><span class="off">;</span><span class="on">:</span></li>  
+        <li id="semicolon" class="symbol"><span class="off">;</span><span class="on">:</span></li>  
         <li id="'" class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>  
         <li id="return" class="return lastitem">return</li>  
         <li id="shift" class="left-shift">shift</li>  
@@ -85,8 +102,8 @@
         <li id="b" class="letter">b</li>  
         <li id="n" class="letter">n</li>  
         <li id="m" class="letter">m</li>  
-        <li id="," class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>  
-        <li id="." class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>  
+        <li id="comma" class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>  
+        <li id="period" class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>  
         <li id="/" class="symbol"><span class="off">/</span><span class="on">?</span></li>  
         <li id="rshift" class="right-shift lastitem">shift</li>  
         <li id="space" class="space lastitem">&nbsp;</li>  
