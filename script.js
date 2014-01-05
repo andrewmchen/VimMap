@@ -23,7 +23,22 @@ $(document).ready(function(){
     $(document).keydown(function(event){
         console.log(event);
         if(event['keyCode']==8){
+            //prevent going back
+        var doPrevent = false;
+        if (event.keyCode === 8) {
+            var d = event.srcElement || event.target;
+            if ((d.tagName.toUpperCase() === 'INPUT' && (d.type.toUpperCase() === 'TEXT' || d.type.toUpperCase() === 'PASSWORD' || d.type.toUpperCase() === 'FILE')) 
+                 || d.tagName.toUpperCase() === 'TEXTAREA') {
+                doPrevent = d.readOnly || d.disabled;
+            }
+            else {
+                doPrevent = true;
+            }
+        }
+
+        if (doPrevent) {
             event.preventDefault();
+        }
             $("#keystroke").html("&nbsp");
             input="";
         }
