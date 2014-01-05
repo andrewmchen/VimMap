@@ -10,25 +10,24 @@ Used to avoid overwriting already made custom mappings.
 
 Soon this will be hosted somewhere. As of now, 
 
-'''bash
-# Clone project
+```bash
 $ git clone git://github.com/andrewmchen/vimmap
 $ cd vimmap
 $ open index.html
-'''
+```
 
 ## Usage
 Open Vim.
-'''bash
+```bash
 :redir! > vim_maps.txt 
 :map 
-'''
+```
 Enter until all mappings are redirected.
-'''bash
+```bash
 :map!
-'''
+```
 Enter until all mappings are redirected.
-'''bash
+```bash
 :redir END
-'''
+```
 Paste all mappings in ~/vim_maps.txt to textarea.
