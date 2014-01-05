@@ -6,6 +6,8 @@ A frontend webapp used to assist the visualization of custom vim mappings.
 
 Used to avoid overwriting already made custom mappings.
 
+Solution to http://stackoverflow.com/questions/5942464/vim-list-free-keybindings
+
 ## Installation
 
 Soon this will be hosted somewhere. As of now, 

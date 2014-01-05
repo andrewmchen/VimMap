@@ -23,6 +23,7 @@ $(document).ready(function(){
     $(document).keydown(function(event){
         console.log(event);
         if(event['keyCode']==8){
+            event.preventDefault();
             $("#keystroke").html("&nbsp");
             input="";
         }
